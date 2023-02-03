@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+    </style>
+
+    <style name="TextView.Gray14">
+        <item name="android:textColor">@color/text_colour_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.White">
+        <item name="android:textColor">@color/text_colour_white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.Black">
+        <item name="android:textColor">@color/text_colour_black</item>
+    </style>
+
+    <style name="TextView.Error">
+        <item name="android:textColor">@color/read</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.Theme.MyApp20.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>

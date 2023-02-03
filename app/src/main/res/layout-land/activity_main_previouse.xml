@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/background"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Setting"
+            android:textSize="28sp"
+            style="@style/TextView.White"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/picturepic"
+            app:layout_constraintBottom_toTopOf="@+id/name_surname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingClass,MissingConstraints,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/name_surname"
+            android:text="@string/name_surname"
+            android:textSize="20sp"
+            style="@style/TextView.White"
+            app:layout_constraintBottom_toTopOf="@+id/home_address"
+            app:layout_constraintEnd_toEndOf="@+id/home_address"
+            app:layout_constraintStart_toStartOf="@+id/home_address"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+        <TextView
+            android:id="@+id/home_address"
+            android:text="@string/career"
+            android:textSize="16sp"
+            style="@style/TextView.White"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/name_surname" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:text="@string/home_addres"
+            android:textSize="16sp"
+            style="@style/TextView.White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_address" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/edit_profile"
+            android:layout_width="0dp"
+            android:background="@drawable/bt_edit_profil_corner"
+            android:outlineProvider="none"
+            android:text="@string/edit_profile"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            style="@style/TextView.Black"
+            app:layout_constraintBottom_toTopOf="@+id/view_my_cont"
+            app:layout_constraintEnd_toEndOf="@+id/view_my_cont"
+            app:layout_constraintStart_toStartOf="@+id/view_my_cont"
+            app:layout_constraintTop_toBottomOf="@+id/f_book"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/view_my_cont"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bt_view_contact_corner"
+            android:outlineProvider="none"
+            android:text="@string/view_my_contacts"
+            android:textSize="20sp"
+            style="@style/TextView.White"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_profile" />
+
+        <Button
+            android:id="@+id/f_book"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttom_fbook"
+            app:layout_constraintBottom_toBottomOf="@+id/button_in"
+            app:layout_constraintEnd_toEndOf="@+id/button_in"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button_in"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button_in"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_in"
+            app:layout_constraintBottom_toTopOf="@+id/edit_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button_inst"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_insta"
+            app:layout_constraintBottom_toBottomOf="@+id/button_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/button_in"
+            app:layout_constraintTop_toTopOf="@+id/button_in"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

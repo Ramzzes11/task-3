@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentMain">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/background"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:background="@color/background"
+            app:layout_constraintBottom_toBottomOf="@+id/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profile"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            app:tint="@color/white" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/contactImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/empty_icon"
+            android:transitionName="big_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.259"
+            tools:ignore="MissingClass,MissingConstraints,ImageContrastCheck" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profile"
+            style="@style/TextView.White"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/profile"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nameSurname"
+            style="@style/TextView.White"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/name_surname"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/career"
+            app:layout_constraintEnd_toEndOf="@+id/career"
+            app:layout_constraintStart_toStartOf="@+id/career"
+            app:layout_constraintVertical_bias="0.65999997" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/career"
+            style="@style/TextView.White"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/career"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactImage"
+            app:layout_constraintVertical_bias="0.471" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/homeAddress"
+            style="@style/TextView.White"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/home_addres"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/career"
+            app:layout_constraintStart_toStartOf="@+id/career"
+            app:layout_constraintTop_toBottomOf="@+id/career"
+            app:layout_constraintVertical_bias="0.39" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/view_my_cont"
+            style="@style/TextView.White"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bt_view_contact_corner"
+            android:outlineProvider="none"
+            android:text="@string/massages"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/f_book"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttom_fbook"
+            app:layout_constraintBottom_toBottomOf="@+id/button_in"
+            app:layout_constraintEnd_toEndOf="@+id/button_in"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button_in"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button_in"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24000001"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button_inst"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_insta"
+            app:layout_constraintBottom_toBottomOf="@+id/button_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/button_in"
+            app:layout_constraintTop_toTopOf="@+id/button_in"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

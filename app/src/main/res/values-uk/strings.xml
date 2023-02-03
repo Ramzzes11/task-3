@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MyApp20</string>
+    <string name="Setting">Налаштування</string>
+    <string name="home_addres">Домашня адреса</string>
+    <string name="career">Карєра</string>
+    <string name="name_surname">Ім\'я Прізвище</string>
+    <string name="view_my_contacts">Переглянути мої контакти</string>
+    <string name="go_to_settings_and_fill_out_the_profile">Зайдіть в налаштування і заповніть профіль</string>
+    <string name="action_settings">Налаштування дій</string>
+    <string name="first_fragment">First Fragment</string>
+    <string name="second_fragment_label">second fragment</string>
+    <string name="edit_profile">Додати профіль</string>
+    <string name="e_mail">E-mail</string>
+    <string name="lets_get_acquainted">Давай знайомитися</string>
+    <string name="fill_out_the_profil">Заповніть профіль і переходьте до додатка!</string>
+    <string name="mail_examp">lucile.alvarado@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="remember_my">Запам\'ятати мене</string>
+    <string name="have_account">Вже маєте акаунт?</string>
+    <string name="sign_in">Увійти</string>
+    <string name="by_clicking">Натиснувши «Зареєструватися», ви погоджуєтеся \n з нашими Умовами</string>
+    <string name="register">РЕЄСТРАЦІЯ</string>
+    <string name="or">або</string>
+    <string name="google">    GOOGLE</string>
+    <string name="valid_email">Дійсна пошта</string>
+    <string name="valid_password">Дійсний пароль</string>
+    <string name="requir_filld">Обов\'язково для заповнення *</string>
+    <string name="delete">Видалити</string>
+    <string name="add_contacts">Додати контакт</string>
+    <string name="contacts">Контакти</string>
+    <string name="toast_delete">Контакт видалено</string>
+    <string name="contact_add_successfully">Контакт додано успішно</string>
+    <string name="save">Зберегти</string>
+
+</resources>

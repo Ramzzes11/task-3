@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentMain">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/background"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/setting"
+            style="@style/TextView.White"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Setting"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/picturepic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.259"
+            tools:ignore="MissingClass,MissingConstraints,ImageContrastCheck" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/name_surname"
+            style="@style/TextView.White"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/name_surname"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/home_address"
+            app:layout_constraintEnd_toEndOf="@+id/home_address"
+            app:layout_constraintStart_toStartOf="@+id/home_address"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+            app:layout_constraintVertical_bias="0.65999997" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/home_address"
+            style="@style/TextView.White"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/career"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+            app:layout_constraintVertical_bias="0.471" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView4"
+            style="@style/TextView.White"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/home_addres"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/home_address"
+            app:layout_constraintStart_toStartOf="@+id/home_address"
+            app:layout_constraintTop_toBottomOf="@+id/home_address"
+            app:layout_constraintVertical_bias="0.39" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/edit_profile"
+            style="@style/TextView.Black"
+            android:layout_width="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bt_edit_profil_corner"
+            android:outlineProvider="none"
+            android:text="@string/edit_profile"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/view_my_cont"
+            app:layout_constraintEnd_toEndOf="@+id/view_my_cont"
+            app:layout_constraintStart_toStartOf="@+id/view_my_cont"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/view_my_cont"
+            style="@style/TextView.White"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bt_view_contact_corner"
+            android:outlineProvider="none"
+            android:text="@string/view_my_contacts"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textV_go_to_settings"
+            style="@style/TextView.Black"
+            android:layout_marginBottom="16dp"
+            android:text="@string/go_to_settings_and_fill_out_the_profile"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_profile"
+            app:layout_constraintEnd_toEndOf="@+id/edit_profile"
+            app:layout_constraintStart_toStartOf="@+id/edit_profile"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/f_book"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttom_fbook"
+            app:layout_constraintBottom_toBottomOf="@+id/button_in"
+            app:layout_constraintEnd_toEndOf="@+id/button_in"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button_in"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button_in"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24000001"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button_inst"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_insta"
+            app:layout_constraintBottom_toBottomOf="@+id/button_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/button_in"
+            app:layout_constraintTop_toTopOf="@+id/button_in"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.myapplication.fragment.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_authFragment_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.example.myapplication.fragment.FragmentMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragmentMain_to_myContactsFragment"
+            app:destination="@id/myContactsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <argument
+            android:name="name_surname"
+            app:argType="string"
+            android:defaultValue="Name Surname" />
+    </fragment>
+    <fragment
+        android:id="@+id/myContactsFragment"
+        android:name="com.example.myapplication.fragment.MyContactsFragment"
+        android:label="fragment_my_contacts"
+        tools:layout="@layout/fragment_my_contacts" >
+        <action
+            android:id="@+id/action_myContactsFragment_to_contactFragmentProfile"
+            app:destination="@id/contactFragmentProfile"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactProfileFragment"
+        android:name="com.example.myapplication.fragment.ContactProfileFragment"
+        android:label="fragment_contact_profile"
+        tools:layout="@layout/fragment_contact_profile" />
+    <fragment
+        android:id="@+id/contactFragmentProfile"
+        android:name="com.example.myapplication.fragment.ContactFragmentProfile"
+        android:label="ContactFragmentProfile" >
+        <argument
+            android:name="nameSurname"
+            app:argType="string"
+            android:defaultValue="Name Surname" />
+        <argument
+            android:name="career"
+            app:argType="string"
+            android:defaultValue="Career" />
+        <argument
+            android:name="photo"
+            app:argType="string"
+            android:defaultValue="photo" />
+    </fragment>
+</navigation>
